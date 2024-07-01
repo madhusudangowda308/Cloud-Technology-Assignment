@@ -140,6 +140,24 @@ Amazon Web Services (AWS) offers IT infrastructure services to businesses as web
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a service provided by Amazon Web Services (AWS) that offers flexible and scalable computing capacity. It helps in minimizing hardware expenses and enables quick development and deployment of applications. Amazon EC2 allows users to launch and manage virtual servers according to their requirements, and adjust capacity to handle varying workloads. Moreover, an EC2 instance refers to a virtual server in the AWS Cloud, with specific hardware configurations based on the chosen instance type (Amazon Web Services, 2023).
 
+![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/9b36f17c-48a1-42d7-b440-e84608694ae8)
+Fig 1: AWS EC2        
+
+7.2.2 What is AWS CloudWatch?
+
+Amazon CloudWatch provides real-time monitoring for your Amazon Web Services (AWS) resources and applications. You can track and collect metrics, which are measurable variables, and create custom dashboards to display them. Additionally, you can set up alarms and receive notifications or automate actions when certain thresholds are reached. This helps you gain insight into resource utilization, application performance, and operational health (Amazon Web Services, 2024).   
+
+![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/a469ce8a-68e7-494e-9095-7d5908a16750)
+                                                                 Fig 2: AWS CloudWatch
+
+                                                                 
+
+
+                                                                 
+
+
+
+
 
 
 
