@@ -1,4 +1,4 @@
-**Cloud Technology for Business (B9MG119)**
+
 
 This repo contains the Cloud Strategy and Sample Deployment of an organization called BOOKSHOW
 
