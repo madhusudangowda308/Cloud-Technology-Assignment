@@ -1,8 +1,8 @@
-Cloud Technology for Business (B9MG119)
+**Cloud Technology for Business (B9MG119)**
 
 This repo contains the Cloud Strategy and Sample Deployment of an organization called BOOKSHOW
 
-Repo Link: 
+Repo Link: https://github.com/Praveenbose/Cloud-Technology-Assignment
 
 
 
