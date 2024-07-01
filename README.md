@@ -417,7 +417,7 @@ Comparison of AWS Cloud Watch and Traditional Monitoring:
 •	Zabbix (n.d.) Zabbix Monitoring Solution. Available at: https://www.zabbix.com/ (Accessed: 29 June 2024).
 Cost calculation:
 •	Intro and Demonstration [Video]. YouTube. https://www.youtube.com/watch?v=aXMih9jQIec&t=2s
-
+hu
 
 
                                                                  
