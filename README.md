@@ -1,3 +1,12 @@
+Cloud Technology for Business (B9MG119)
+
+This repo contains the Cloud Strategy and Sample Deployment of an organization called BOOKSHOW
+
+Repo Link: 
+
+
+
+
 1. Primary Objective
 
 The primary objective of this project is to develop a comprehensive cloud strategy for BookShow, which is one of the leading online ticketing platforms. BookShow currently manages its IT infrastructure, including hardware, software, and on-site. Our strategy aims to transition from the current on-premises model to a cloud-based solution to enhance operational efficiency and overall business performance. To help drive this transformation, we will outline a detailed cloud strategy and a sample deployment plan.
