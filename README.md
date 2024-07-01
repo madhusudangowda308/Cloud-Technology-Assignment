@@ -1,4 +1,4 @@
-
+**Cloud Technology for Business (B9MG119)**
 
 This repo contains the Cloud Strategy and Sample Deployment of an organization called BOOKSHOW
 
@@ -158,6 +158,267 @@ Amazon CloudWatch provides real-time monitoring for your Amazon Web Services (AW
 
 ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/a469ce8a-68e7-494e-9095-7d5908a16750)
                                                                  Fig 2: AWS CloudWatch
+
+8. Recommended Solutions
+
+8.1 Aspect 1: Web Hosting 
+
+To address server downtime and scalability issues, our recommendation is to use AWS EC2. Integrating AWS EC2 will enable BookShow to flexibly adjust its computing resources according to fluctuating demand, particularly during peak ticketing periods for popular events. This means that the platform can instantly increase server capacity to handle high user traffic without manual input, ensuring website responsiveness and preventing slowdowns or crashes. Conversely, during low-demand periods, EC2 can reduce resources to optimize cost efficiency by utilizing only required capacity. Let's compare AWS EC2 with on-premises servers.
+
+Comparative Analysis
+Features	AWS EC2	On-premises servers
+Cost Efficiency	AWS EC2 operates on a pay-as-you-go model, where costs are proportional to actual usage. This eliminates the need for large upfront investments in hardware and software licenses, thereby reducing capital expenditure and optimizing operating expenses.	Involve significant CapEx for hardware, software licenses, and ongoing maintenance, contributing to high operational costs.
+Management and Maintenance	Managing the server is made easier with AWS EC2, which includes features such as backup, monitoring, and automatic scaling. By doing this, IT teams can focus on strategic initiatives and reduce the operational stress associated with maintenance tasks.	Servers located on-premises require manual handling of hardware upgrades, software updates, and problem-solving, which can consume a lot of time and resources, leading to difficulties in monitoring performance and maintenance.
+Scalability and Flexibility	AWS EC2 offers dynamic scalability, allowing resources to be easily scaled up or down based on demand. This flexibility is crucial during peak ticketing periods, ensuring that BookShow can handle sudden spikes in traffic without downtime or performance issues.	On-Premises servers need careful planning and initial investment for capacity, which can lead to over-provisioning when there is less demand and potential resource limitations during busy periods (Hewlett Packard Enterprise, n.d.).
+Reliability and Availability	AWS EC2 allows for high availability and reliability by incorporating multi-region redundancy and automatic failover, which reduces the chances of hardware failure or maintenance-related downtime.	Local infrastructure is critical for on-premises servers, and there may be a need for extra investments in redundancy and disaster recovery solutions to attain comparable levels of availability.
+Security and Compliance	AWS EC2 provides strong security features and compliance certifications, such as encryption, access controls, and routine security audits, to help BookShow comply with industry regulations and safeguard sensitive customer data effectively (AWS, n.d.).	On-premises servers provide direct control over security measures but require extensive expertise and resources to maintain security patches and updates consistently (Lucidchart, n.d.).
+
+8.1.1 Recommendation: AWS Elastic Compute Cloud
+
+8.1.2 Justification: AWS EC2 is recommended for BookShow due to its flexible scalability, pay-as-you-go model, high availability, and strong security. These features enable BookShow to enhance service reliability, optimize costs, and maintain high-security measures, making AWS EC2 the superior choice for supporting their online ticketing platform's performance and growth.
+
+8.2 Aspect 2: Monitoring System
+
+To address the challenge of slow response to server issues and lack of real-time insights, we can implement AWS CloudWatch. CloudWatch provides real-time monitoring and proactive alerts, allowing for immediate detection and resolution of performance problems. This enhances customer satisfaction by minimizing downtime and preventing revenue loss. Let's compare AWS Cloudwatch with a traditional monitoring system.
+
+Comparative Analysis
+Features	AWS CloudWatch	Traditional monitoring system (Nagios, Zabbix)
+Automation and Scalability	AWS CloudWatch provides the ability to automatically adjust the capacity of resources according to specific measurements and limits. This could involve tasks such as modifying the size of EC2 instances, and is essential for managing fluctuations in demand and improving the efficient use of resources.	Usually, they use manual setup and scripting to scale or automate actions. They may lack built-in support for cloud-based services or auto-scaling features without making additional customizations.
+Metrics and Dashboards	Provides built-in metrics and customizable dashboards that offer real-time visibility into performance metrics such as CPU utilization, memory usage, and network traffic. These dashboards can be tailored to display key metrics relevant to BookShow-specific applications and services.	Require more manual setup to configure dashboards and collect metrics from various servers and applications. They may not offer as extensive or integrated dashboard capabilities.
+Alerting and Notifications	Enables customizable alerts based on predefined thresholds for metrics. It can send notifications via email, and SMS, or trigger automated actions through AWS services like SNS (Simple Notification Service). This ensures timely responses to performance issues or anomalies.	Offer alerting capabilities but may require more manual setup for defining alerts and integrating with external notification systems. They may lack seamless integration with AWS services for automated responses.
+Integration and security Compliance	AWS CloudWatch effectively automates the process of ensuring security settings compliance by integrating closely with various AWS services. This service is managed, offering strong security management for scalable cloud environments without incurring high operational expenses.	Conventional monitoring tools often need manual setup and don't integrate smoothly with cloud services, leading to scaling problems and higher maintenance expenses. They often need users to handle security updates on their own and may not be able to match the speed and automation of cloud-native solutions like CloudWatch.
+Cost Efficiency	Operates on a pay-as-you-go model, where a company pays for the metrics and logs ingested, along with any additional features used like custom dashboards or enhanced monitoring capabilities. This aligns costs with actual usage and can be more cost effective for dynamic workloads (AWS, n.d.).	Often involve upfront costs for licenses and hardware, along with ongoing maintenance expenses. Scaling traditional tools to accommodate growth or sudden increases in monitoring requirements may incur additional costs and resource allocation.
+
+8.2.1 Recommendation: AWS CloudWatch
+8.2.2 Justification: AWS CloudWatch is recommended for BookShow due to its seamless integration with AWS services, automation capabilities, comprehensive metrics, and alerting features. It simplifies monitoring operations, provides real-time insights, and optimizes cost-effectiveness, which is crucial for meeting the dynamic demands of an online ticketing platform.
+9. Detail of the Costs
+
+Let’s estimate the monthly spent on the current IT setup
+
+9.1 On-Premises cost
+
+Capital Expenditures (CapEx): CapEx refers to the one-time costs associated with acquiring  physical assets.
+
+1. Lets assume the total CapEX, covering physical Servers, network equipment, storage device, backup system, and load balancer, is approximately $72,000.
+2. The total Software costs, including Operating system, Software, and database licenses, and other software applications, amount to around $20,000.
+       
+Operational Expenditures (OpEx): OpEx refers to the recurring costs for maintaining and operating the assets
+
+ 3. The total OpEx cost of IT staff salaries, maintenance, and power & cooling totals approximately   $75,000 per year.
+ 4. Total cost including CapEx (One-time) +OpEx (annually) = $92,000+$75,000= $1,67,000.
+
+9.2 AWS Costs
+
+Estimated Monthly Costs on Cloud services which includes AWS EC2 and AWS CloudWatch: Approximately $1,090.39 per month and $13,084 Per Annum.
+
+![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/ba541ade-374a-44c8-91fa-ebd1b97393d1)
+Fig 1: AWS Pricing Calculator
+
+9.3 Options for backup 
+
+ AWS Backup: AWS provides automated backup options. 
+
+ Note :AWS backup pricing service is temporarily disabled
+
+ 
+Fig 2: AWS Backup Pricing calculator
+
+9.4 Monitoring and Management 
+
+AWS CloudWatch : AWS provides real time monitoring system.
+
+Estimated Monthly Costs on Cloud services which includes AWS CloudWatch is Approximately $363.45 per month and $4,361.40 Per Annum.
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/813811cb-e0e5-4ead-a21b-6beeba0d4930)
+
+                                   Fig 3: AWS CloudWatch pricing calculator
+
+10. Sample Cloud Infrastructure Deployment
+
+Let's outline and deploy a sample cloud infrastructure using AWS EC2 and CloudWatch, aligning with our recommendations.
+
+10.1 Pre-requisite
+
+1. Ensure you have an AWS account setup. https://signin.aws.amazon.com/.
+2. Install and configure the AWS Command Line Interface on the local machine.
+    (The AWS CLI is a tool that allows you to control multiple AWS services from
+    the command line)
+
+10.2 Steps to be followed
+
+1.	Launch a new EC2 instance for hosting the web application.
+2.	Securely connect to an EC2 instance via SSH using a.pem file.
+3.	To host the web application, install Apache.
+4.	Create a basic HTML file to serve.
+5.	Configure and set up an alarm in CloudWatch through the AWS console.
+6.	Validating the EC2 HTML page and CloudWatch alert notifications.
+
+Step 1: Launch a new EC2 instance for hosting the web application
+
+	Login to the AWS console.
+	Search for the EC2 service and launch into the EC2 dashboard.
+	Click on Launch -> Launch instances.
+	Enter the instance ‘name’.
+	Choose an Amazon Machine Image (AMI) E.g., Amazon Linux 2 AMI (free tier).
+	Select an instance type. E.g., t2.micro (eligible for free tier).
+	Create a new key pair or use an existing key pair. Download and save the .pem file.
+	In Network settings, enable “Allow SSH traffic from” and “allow HTTP traffic from the internet” to access “port 22” and “port 80”.
+	Leave other options as defaults and launch instances.
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/1a582075-e3be-4d43-89bc-1c8151d5c2b2)
+
+   Fig 1: Launching a new EC2 instances
+
+Step 2: Securely connect to an EC2 instance via SSH using a.pem file.
+
+Connecting EC2 via SSH, has direct access to the EC2 operating system, enabling advanced configurations, real-time troubleshooting, automation, and efficient resource management.
+
+	Once the EC2 instance is up and running, open your terminal
+	Navigate to the directory where your `.pem` file is saved
+	Connect to your EC2 instance using the below command:
+  ssh -i "your-key-pair.pem" ec2-user@”your-ec2-public-DNS 
+  Example: ssh -i TestA.pem ec2-user@54.209.222.78
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/2706c71a-d2d6-421b-ad19-45a94c88d835)
+
+                                    Fig.2: Connecting to EC2 instances via SSH
+
+Step 3: To host the web application, install Apache
+
+Installing Apache is to prepare the EC2 instance to handle HTTP/HTTPS requests and serve content to users, which is essential for any web-based application. This allows users to access web pages and web applications hosted on the EC2 instance.
+
+	Execute the below commands one by one to install and configure Apache.
+        sudo yum update -y
+        sudo yum install -y httpd
+        sudo systemctl start httpd
+        sudo systemctl enable httpd
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/771a5de0-ead1-4304-a6a4-02fa3364cb27)
+
+                                               Fig.3: Installing Apache
+
+Step 4: Create a basic HTML file to serve
+
+The HTML file provides a basic web page that can be viewed in a user browser, ensuring that the Apache web server is capable of delivering web content to users.
+
+	Once Apache is installed, create a simple HTML file. Run the below command.
+      echo "<html><h1>Welcome to BookShow!</h1></html>" |  sudo 
+      tee /var/www/html/index.html
+
+	To verify your web browser, navigate to http://your-ec2-public-ip. 
+ Example: http:// 52.87.221.177 
+ The "Welcome to BookShow! " message should be displayed.
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/cec30a93-630b-4f90-a2ae-36652c6f10ac)
+
+Fig 4: HTML page with Welcome message
+
+Step 5: Configure and set up an alarm in CloudWatch through the AWS console
+             
+	Go to the AWS Amazon console. Open the Cloud Watch dashboard.
+	Click on ‘All Alarm’ -> Create Alarm.
+	Select Metrics. On the following page, Select “EC2“ under the browse tab.
+	Select “per-instance metrics”. Running instance lists will be displayed.
+	From the list “CPUUtilization” that we want to monitor. Click on Select Metrics.
+	On the Metrics and conditions page,
+
+ - Period: Select the evaluation period, for example, "5 minutes". This specifies how 
+    often CloudWatch checks the metrics.
+ -  Select the threshold type as “Static”.
+       -  Select “Whenever CPUUtilization is.” as “Greater than or equal to”.
+       - Threshold: Set a value, for example, "50".This means the alarm will trigger if the
+           CPU utilization is 50% or higher.
+      
+	Click on next to config the alarm (to specify what action to take when the alarm state is triggered)
+       -  Notification: Select "In alarm"
+       -  Send a notification to: Create a new topic, to receive email/SMS notifications.
+       -  Add a name for the SNS topic.
+       -  Add an email address to receive the alert notifications.
+       -  Click on Create Topic and click on next
+![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/264e3ca8-359f-4c97-bcc5-50ca77d9a5da)
+
+   Fig 5: Configuring notification alert in CloudWatch
+
+	In the "Add name and description" page, provide a name for the alarm. (e.g., "High CPU Utilization Alarm") and add a description (optional).
+	Review the alarm configuration and click on Create alarm.
+	Confirm the SNS subscription which is received in the configured Email.
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/7344b0ea-8eda-4e3e-b095-4baf42a4ebad)
+
+Fig 6: CloudWatch Dashboard with configured Alarm
+
+Step 6: Validating the EC2 HTML page and CloudWatch alert notifications
+
+	Open your terminal. Connecting to your instances install the stress tool (stress tool is utilized to simulate CPU load on an EC2 instance to validate monitoring setups like CloudWatch alarms)
+sudo yum install -y stress.
+	After installing the stress tool, to simulate the CPU usage run the following command.        Stress --cpu 4--timeout 300  (Example to stress 4 CPUs for 5 minutes (300 seconds)).
+	Verify the CloudWatch dashboard. Email alert notification should be received for the mentioned email when CPU usage is more than 50%
+![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/39518d15-c01b-44e1-83ed-f785b0062684)
+
+ 
+                                      Fig 7: CloudWatch Dashboard after simulating the CPU usage
+
+ ![image](https://github.com/Praveenbose/Cloud-Technology-Assignment/assets/169264693/8440f5cd-e0c0-4620-b054-aea8dbcdb7a8)
+
+             Fig 8: SNS Alarm notification when EC2 CPU utilization is more than set threshold.
+
+We have now deployed a simple cloud infrastructure using EC2 and CloudWatch.When the CPU utilization exceeds the specified threshold in the EC2, CloudWatch will trigger the alarm and send a notification via SNS to the specified E-mail recipient. This approach helps ensure you can quickly respond to high CPU usage alerts and maintain the performance of your EC2 instances.
+10.3 Architectural representation of Sample deployment
+
+ 
+
+	The Users accesses the HTML web application hosted on the EC2 instance.
+
+	AWS EC2 Instance hosts the web application and Apache web server.
+
+	CloudWatch: Monitors the EC2 instance. Checks network traffic /CPU Utilization 
+and triggers alarms when CPU Utilization reaches the threshold.
+
+	SNS Topic: Sends alert notifications (e.g., email) to admin when alarms are triggered.
+11. Use of GitHub/GitLab
+https://github.com/Praveenbose/Cloud-Technology-Assignment/edit/main/README.md
+  GitHub link for the project documentation.
+ 
+12. Conclusion
+
+In this report, we proposed a comprehensive cloud strategy for BookShow, including analyzing current IT configurations, evaluating cloud and non-cloud solutions, and providing precise recommendations of AWS services for each aspect of an infrastructure company's IT. The strategy aims to meet BookShow's specific needs and goals, considering factors such as profitability, business flexibility, security requirements, and future scalability.
+13. References
+
+•	F5 (2024) 'Welcome to NGINX', available at: https://www.f5.com/go/product/welcome-to-nginx (Accessed: 30 June 2024).
+•	Apache HTTP Server. (n.d.). About Apache HTTP Server. Retrieved June 30, 2024, from https://httpd.apache.org/ABOUT_APACHE.html 
+•	Microsoft SQL Server (n.d.) Microsoft SQL Server. Available at:
+ https://www.microsoft.com/en-us/sql-server (Accessed: 29 June 2024).
+•	PostgreSQL (n.d.) PostgreSQL: The World's Most Advanced Open Source Relational Database. Available at: https://www.postgresql.org (Accessed: 29 June 2024).
+•	Kinsta. (n.d.). Content Management System (CMS): What It Is and How It Works. Available at: https://kinsta.com/knowledgebase/content-management-system/ (Accessed: 30 June 2024).
+•	ProInfluent. (n.d.). Customer Relationship Management (CRM). Available at: https://www.proinfluent.com/en/customer-relationship-management/ (Accessed: 30 June 2024).
+•	Nagios (n.d.) Nagios. Available at: https://www.nagios.org (Accessed: 29 June 2024).
+•	Zabbix (n.d.) Zabbix. Available at: https://www.zabbix.com (Accessed: 29 June 2024).
+•	Okta. (n.d.). IDS vs IPS: What’s the Difference? Available at: https://www.okta.com/identity-101/ids-vs-ips/ (Accessed: 30 June 2024)
+
+Cloud Computing:
+•	Microsoft Azure, n.d. What is cloud computing? [online] Available at: https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/what-is-cloud-computing/ [Accessed 29 June 2024].
+•	Amazon Web Services (2023). AWS Overview. Available at: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html (Accessed: 30 June 2024).
+•	Amazon Web Services (2023). Amazon EC2 concepts. Available at: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html (Accessed: 30 June 2024).
+•	Amazon Web Services (2024). What is Amazon CloudWatch?. Available at: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html (Accessed: 30 June 2024).
+
+Comparison of AWS EC2 and On-Premises:
+
+•	AWS, n.d. Amazon EC2 Features. [online] Available at: https://aws.amazon.com/ec2/features/ [Accessed 29 June 2024].
+•	AWS, n.d. Amazon EC2 Security. [online] Available at: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html [Accessed 29 June 2024].
+•	Hewlett Packard Enterprise, n.d. On-premises vs. Cloud. [online] Available at: https://www.hpe.com/us/en/what-is/on-premises-vs-cloud.html [Accessed 29 June 2024].
+•	Lucidchart, n.d. Cloud vs. On-Premises: Comparison. [online] Available at: https://www.lucidchart.com/blog/cloud-vs-on-premises-comparison [Accessed 29 June 2024].
+
+Comparison of AWS Cloud Watch and Traditional Monitoring:
+
+•	AWS, n.d. Amazon CloudWatch Features. [online] Available at: https://aws.amazon.com/cloudwatch/features/ [Accessed 29 June 2024].
+•	AWS, n.d. Amazon CloudWatch Pricing. [online] Available at: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_billing.html [Accessed 29 June 2024].
+•	Amazon Web Services (n.d.) What is CloudWatch?. Available at: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html (Accessed: 29 June 2024).
+•	Nagios (n.d.) Nagios - The Industry Standard in IT Infrastructure Monitoring. Available at: https://www.nagios.org/ (Accessed: 29 June 2024).
+•	Zabbix (n.d.) Zabbix Monitoring Solution. Available at: https://www.zabbix.com/ (Accessed: 29 June 2024).
+Cost calculation:
+•	Intro and Demonstration [Video]. YouTube. https://www.youtube.com/watch?v=aXMih9jQIec&t=2s
+
+
 
                                                                  
 
